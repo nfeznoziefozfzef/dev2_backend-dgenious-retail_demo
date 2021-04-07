@@ -1,0 +1,23 @@
+{
+  "username" : "alebacq",
+  "company" : "retail_demo",
+  "name" : "Antoine Lebacq",
+  "language" : "EN",
+  "email" : "a.lebacq@dgenious.com",
+  "phone" : "+41 78 831 60 03",
+  "visible" : true,
+  "permission_groups" : [ "shop_manager", "hq_manager", "sys_admin", "shop_user" ],
+  "profile_keys" : {
+    "tcpos.SWA" : {
+      "all_values" : true
+    },
+    "tcpos.SHO" : {
+      "all_values" : true
+    },
+    "retail.Shop" : {
+      "all_values" : true
+    }
+  },
+  "user_id" : 900069424,
+  "editable" : true
+}

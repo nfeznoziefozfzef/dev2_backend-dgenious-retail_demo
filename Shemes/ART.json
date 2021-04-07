@@ -1,0 +1,21 @@
+{
+  "requires" : [ "scheme.ART", "graph.retail" ],
+  "grants" : [ "auth.scheme.ART" ],
+  "name" : "Articles",
+  "comment" : "Ce schéma détaille les caractéristiques des articles",
+  "translations" : {
+    "EN" : {
+      "name" : "Articles",
+      "comment" : "This scheme lists the details of all articles"
+    },
+    "FR" : {
+      "name" : "Articles",
+      "comment" : "Ce schéma détaille les caractéristiques des articles"
+    }
+  },
+  "visible" : true,
+  "graph" : "retail",
+  "scheme" : "ART",
+  "entry_table" : "ART",
+  "company" : "retail_demo"
+}

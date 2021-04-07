@@ -1,0 +1,21 @@
+{
+  "requires" : [ "scheme.CUS", "graph.retail" ],
+  "grants" : [ "auth.scheme.CUS" ],
+  "name" : "Clients",
+  "comment" : "Ce schéma détaille les caractéristiques des clients",
+  "translations" : {
+    "EN" : {
+      "name" : "Customers",
+      "comment" : "List of all customers"
+    },
+    "FR" : {
+      "name" : "Clients",
+      "comment" : "Ce schéma détaille les caractéristiques des clients"
+    }
+  },
+  "visible" : true,
+  "graph" : "retail",
+  "scheme" : "CUS",
+  "entry_table" : "CUS",
+  "company" : "retail_demo"
+}

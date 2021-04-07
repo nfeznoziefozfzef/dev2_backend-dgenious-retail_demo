@@ -1,0 +1,25 @@
+{
+  "name" : "Marque",
+  "category" : "Articles",
+  "mappings" : {
+    "ART" : "retail.ART.Brand",
+    "BSK_LINE" : "retail.ART.Brand"
+  },
+  "requires" : [ "graph.retail" ],
+  "translations" : {
+    "EN" : {
+      "name" : "Brand",
+      "category" : "Articles"
+    },
+    "FR" : {
+      "name" : "Marque",
+      "category" : "Articles"
+    }
+  },
+  "path" : "retail.Brand",
+  "data_type" : "TEXT",
+  "auto_mappings" : [ "retail.ART.Brand" ],
+  "default_mapping" : "ART",
+  "company" : "retail_demo",
+  "graph" : "retail"
+}

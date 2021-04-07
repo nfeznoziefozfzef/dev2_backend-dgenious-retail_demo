@@ -1,0 +1,24 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Brand",
+      "category" : "Articles"
+    },
+    "FR" : {
+      "name" : "Marque",
+      "category" : "Articles"
+    }
+  },
+  "name" : "Marque",
+  "category" : "Articles",
+  "properties" : {
+    "width" : 200.0
+  },
+  "requires" : "graph.retail;auth.scheme.ART | auth.scheme.BSK_LINE | _SYS_",
+  "sql" : "{{ART}}.`Brand`",
+  "path" : "retail.ART.Brand",
+  "type" : "TEXT",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

@@ -1,0 +1,25 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "UID Customer",
+      "category" : "Customers"
+    },
+    "FR" : {
+      "name" : "UID Client",
+      "category" : "Clients"
+    }
+  },
+  "name" : "UID Client",
+  "category" : "Clients",
+  "requires" : "graph.retail;auth.scheme.CUS | auth.scheme.BSK_LINE | auth.scheme.BSK | _SYS_",
+  "sql" : "{{CUS}}.`IdCustomer`",
+  "path" : "retail.CUS.IdCustomer",
+  "type" : "ID",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "scheme_sql" : {
+    "BSK_LINE" : "{{BSK_LINE}}.`IdCustomer`",
+    "BSK" : "{{BSK}}.`IdCustomer`"
+  },
+  "company" : "retail_demo"
+}

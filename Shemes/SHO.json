@@ -1,0 +1,21 @@
+{
+  "requires" : [ "scheme.SHO", "graph.retail" ],
+  "grants" : [ "auth.scheme.SHO" ],
+  "name" : "Magasins",
+  "comment" : "Ce schéma donne la liste des magasins",
+  "translations" : {
+    "EN" : {
+      "name" : "Shops",
+      "comment" : "List of all shops"
+    },
+    "FR" : {
+      "name" : "Magasins",
+      "comment" : "Ce schéma donne la liste des magasins"
+    }
+  },
+  "visible" : true,
+  "graph" : "retail",
+  "scheme" : "SHO",
+  "entry_table" : "SHO",
+  "company" : "retail_demo"
+}

@@ -1,0 +1,22 @@
+{
+  "requires" : [ "scheme.BSK", "graph.retail" ],
+  "grants" : [ "auth.scheme.BSK" ],
+  "name" : "Tickets",
+  "comment" : "Ce schéma donne la liste des tickets",
+  "translations" : {
+    "EN" : {
+      "name" : "Tickets",
+      "comment" : "List of all tickets"
+    },
+    "FR" : {
+      "name" : "Tickets",
+      "comment" : "Ce schéma donne la liste des tickets"
+    }
+  },
+  "visible" : true,
+  "graph" : "retail",
+  "scheme" : "BSK",
+  "entry_table" : "BSK",
+  "company" : "retail_demo",
+  "row_count" : 100
+}

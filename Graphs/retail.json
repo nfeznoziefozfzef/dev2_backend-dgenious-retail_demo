@@ -1,0 +1,300 @@
+{
+  "name" : "retail",
+  "tables" : [ {
+    "name" : "ARTICLE",
+    "fields" : [ {
+      "name" : "IdArticle",
+      "type" : "ID"
+    }, {
+      "name" : "Label",
+      "type" : "TEXT"
+    }, {
+      "name" : "Reward",
+      "type" : "BOOLEAN"
+    }, {
+      "name" : "Supplier",
+      "type" : "TEXT"
+    }, {
+      "name" : "Category1",
+      "type" : "TEXT"
+    }, {
+      "name" : "Category2",
+      "type" : "TEXT"
+    }, {
+      "name" : "Category3",
+      "type" : "TEXT"
+    }, {
+      "name" : "Brand",
+      "type" : "TEXT"
+    }, {
+      "name" : "ProductLine",
+      "type" : "TEXT"
+    }, {
+      "name" : "MerchandiseCategory",
+      "type" : "TEXT"
+    }, {
+      "name" : "BestPromotion",
+      "type" : "TEXT"
+    } ],
+    "mappings" : [ {
+      "alias" : "ART"
+    } ]
+  }, {
+    "name" : "BASKET",
+    "fields" : [ {
+      "name" : "AmountIncl",
+      "type" : "DECIMAL"
+    }, {
+      "name" : "AmountExcl",
+      "type" : "DECIMAL"
+    }, {
+      "name" : "IdBasket",
+      "type" : "ID"
+    }, {
+      "name" : "IdCustomer",
+      "type" : "ID"
+    }, {
+      "name" : "RefDate",
+      "type" : "DATE"
+    }, {
+      "name" : "RefTime",
+      "type" : "TIME"
+    }, {
+      "name" : "ArticleCount",
+      "type" : "INTEGER"
+    }, {
+      "name" : "DiscountIncl",
+      "type" : "DECIMAL"
+    }, {
+      "name" : "DiscountExcl",
+      "type" : "DECIMAL"
+    }, {
+      "name" : "VatAmount",
+      "type" : "DECIMAL"
+    }, {
+      "name" : "IdShop",
+      "type" : "ID"
+    } ],
+    "mappings" : [ {
+      "alias" : "BSK"
+    } ],
+    "content" : "FACTS",
+    "where" : "BSK.RefDate<=CURRENT_DATE"
+  }, {
+    "name" : "BASKET_LINE",
+    "fields" : [ {
+      "name" : "AmountExcl",
+      "type" : "DECIMAL"
+    }, {
+      "name" : "AmountIncl",
+      "type" : "DECIMAL"
+    }, {
+      "name" : "DiscountExcl",
+      "type" : "DECIMAL"
+    }, {
+      "name" : "DiscountIncl",
+      "type" : "DECIMAL"
+    }, {
+      "name" : "DiscountRate",
+      "type" : "DECIMAL"
+    }, {
+      "name" : "DiscountType",
+      "type" : "ID"
+    }, {
+      "name" : "IdArticle",
+      "type" : "ID"
+    }, {
+      "name" : "IdBasket",
+      "type" : "ID"
+    }, {
+      "name" : "IdCustomer",
+      "type" : "ID"
+    }, {
+      "name" : "IdShop",
+      "type" : "ID"
+    }, {
+      "name" : "IsArtGift",
+      "type" : "BOOLEAN"
+    }, {
+      "name" : "LineNumber",
+      "type" : "INTEGER"
+    }, {
+      "name" : "Quantity",
+      "type" : "INTEGER"
+    }, {
+      "name" : "RateVat",
+      "type" : "DECIMAL"
+    }, {
+      "name" : "RefDate",
+      "type" : "DATE"
+    }, {
+      "name" : "RefTime",
+      "type" : "TIME"
+    }, {
+      "name" : "UnitPrice",
+      "type" : "DECIMAL"
+    }, {
+      "name" : "VatCode",
+      "type" : "TEXT"
+    }, {
+      "name" : "VatAmount",
+      "type" : "DECIMAL"
+    } ],
+    "mappings" : [ {
+      "alias" : "BSK_LINE"
+    } ],
+    "content" : "FACTS",
+    "where" : "BSK_LINE.RefDate<=CURRENT_DATE"
+  }, {
+    "name" : "CUSTOMER",
+    "fields" : [ {
+      "name" : "BirthDate",
+      "type" : "DATE"
+    }, {
+      "name" : "Email",
+      "type" : "TEXT"
+    }, {
+      "name" : "FirstName",
+      "type" : "TEXT"
+    }, {
+      "name" : "IdCustomer",
+      "type" : "ID"
+    }, {
+      "name" : "Name",
+      "type" : "TEXT"
+    }, {
+      "name" : "LastUpdateDate",
+      "type" : "DATE"
+    }, {
+      "name" : "RecruitDate",
+      "type" : "DATE"
+    }, {
+      "name" : "RecruitIdShop",
+      "type" : "ID"
+    }, {
+      "name" : "Gender",
+      "type" : "TEXT"
+    }, {
+      "name" : "Churn",
+      "type" : "TEXT"
+    }, {
+      "name" : "Segment1",
+      "type" : "TEXT"
+    }, {
+      "name" : "Segment2",
+      "type" : "TEXT"
+    }, {
+      "name" : "CustomerType",
+      "type" : "TEXT"
+    } ],
+    "mappings" : [ {
+      "alias" : "CUS"
+    } ]
+  }, {
+    "name" : "SHOP",
+    "fields" : [ {
+      "name" : "City",
+      "type" : "TEXT"
+    }, {
+      "name" : "IdCountry",
+      "type" : "TEXT"
+    }, {
+      "name" : "IsActive",
+      "type" : "BOOLEAN"
+    }, {
+      "name" : "Name",
+      "type" : "TEXT"
+    }, {
+      "name" : "IdShop",
+      "type" : "ID"
+    }, {
+      "name" : "ChainStore",
+      "type" : "TEXT"
+    }, {
+      "name" : "Region",
+      "type" : "TEXT"
+    } ],
+    "mappings" : [ {
+      "alias" : "SHO"
+    }, {
+      "alias" : "SHO_CUS"
+    } ]
+  }, {
+    "name" : "SHOP_STATS",
+    "fields" : [ {
+      "name" : "ArticleCount",
+      "type" : "INTEGER"
+    }, {
+      "name" : "RefDate",
+      "type" : "DATE"
+    }, {
+      "name" : "AmountIncl",
+      "type" : "DECIMAL"
+    }, {
+      "name" : "AmountExcl",
+      "type" : "DECIMAL"
+    }, {
+      "name" : "BasketCount",
+      "type" : "DECIMAL"
+    }, {
+      "name" : "DiscountIncl",
+      "type" : "DECIMAL"
+    }, {
+      "name" : "DiscountExcl",
+      "type" : "DECIMAL"
+    }, {
+      "name" : "VatAmount",
+      "type" : "DECIMAL"
+    }, {
+      "name" : "IdShop",
+      "type" : "ID"
+    } ],
+    "mappings" : [ {
+      "alias" : "STAT"
+    } ],
+    "where" : "STAT.RefDate<=CURRENT_DATE"
+  } ],
+  "joins" : [ {
+    "on" : "left.IdCustomer=right.IdCustomer",
+    "left" : "BSK",
+    "right" : "CUS",
+    "outer" : true
+  }, {
+    "on" : "left.IdShop=right.IdShop",
+    "left" : "BSK",
+    "right" : "SHO",
+    "outer" : false
+  }, {
+    "on" : "left.IdArticle=right.IdArticle",
+    "left" : "BSK_LINE",
+    "right" : "ART",
+    "outer" : false
+  }, {
+    "on" : "left.IdBasket=right.IdBasket",
+    "left" : "BSK_LINE",
+    "right" : "BSK",
+    "outer" : false
+  }, {
+    "on" : "left.IdCustomer=right.IdCustomer",
+    "left" : "BSK_LINE",
+    "right" : "CUS",
+    "outer" : true
+  }, {
+    "on" : "left.IdShop=right.IdShop",
+    "left" : "BSK_LINE",
+    "right" : "SHO",
+    "outer" : false
+  }, {
+    "on" : "left.RecruitIdShop=right.IdShop",
+    "left" : "CUS",
+    "right" : "SHO_CUS",
+    "outer" : true
+  }, {
+    "on" : "left.IdShop=right.IdShop",
+    "left" : "STAT",
+    "right" : "SHO",
+    "outer" : false
+  } ],
+  "path" : "retail",
+  "company" : "retail_demo"
+}

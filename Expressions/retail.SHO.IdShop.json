@@ -1,0 +1,29 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "UID Shop",
+      "category" : "Shop"
+    },
+    "FR" : {
+      "name" : "UID Magasin",
+      "category" : "Magasin"
+    }
+  },
+  "name" : "UID Magasin",
+  "category" : "Magasin",
+  "properties" : {
+    "width" : 200.0
+  },
+  "requires" : "graph.retail;auth.scheme.STAT | auth.scheme.BSK_LINE | auth.scheme.BSK | auth.scheme.SHO | _SYS_",
+  "sql" : "{{SHO}}.`IdShop`",
+  "path" : "retail.SHO.IdShop",
+  "type" : "ID",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "scheme_sql" : {
+    "STAT" : "{{STAT}}.`IdShop`",
+    "BSK_LINE" : "{{BSK_LINE}}.`IdShop`",
+    "BSK" : "{{BSK}}.`IdShop`"
+  },
+  "company" : "retail_demo"
+}

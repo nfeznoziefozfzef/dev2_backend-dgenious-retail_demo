@@ -1,0 +1,23 @@
+{
+  "requires" : [ "scheme.BSK_LINE", "graph.retail" ],
+  "grants" : [ "auth.scheme.BSK_LINE" ],
+  "name" : "Lignes de tickets",
+  "comment" : "Ce schéma donne la liste des composants d'un ticket",
+  "translations" : {
+    "EN" : {
+      "name" : "Tickets - lines",
+      "comment" : "List of all ticket lines"
+    },
+    "FR" : {
+      "name" : "Lignes de tickets",
+      "comment" : "Ce schéma donne la liste des composants d'un ticket"
+    }
+  },
+  "visible" : true,
+  "graph" : "retail",
+  "scheme" : "BSK_LINE",
+  "entry_table" : "BSK_LINE",
+  "company" : "retail_demo",
+  "row_count" : 1000,
+  "transitions" : [ "STAT", "BSK" ]
+}

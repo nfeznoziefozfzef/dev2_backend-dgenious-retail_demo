@@ -1,0 +1,18 @@
+{
+  "paths" : [ "scheme.*", "graph.retail" ],
+  "name" : "Region manager",
+  "alias" : "region_user",
+  "admin_profile" : {
+    "template_sharer" : true,
+    "mandatory_sharer" : true,
+    "document_editor" : true,
+    "limited_exporter" : true,
+    "full_exporter" : true,
+    "execution_delegator" : true,
+    "user_manager" : false,
+    "debugger" : false,
+    "task_editor" : true
+  },
+  "required_profile_keys" : [ "retail.Region" ],
+  "company" : "retail_demo"
+}

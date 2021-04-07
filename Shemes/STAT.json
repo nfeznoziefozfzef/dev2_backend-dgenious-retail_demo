@@ -1,0 +1,22 @@
+{
+  "requires" : [ "scheme.STAT", "graph.retail" ],
+  "grants" : [ "auth.scheme.STAT" ],
+  "name" : "Statistiques",
+  "comment" : "Ce schéma détaille les statistiques quotidiennes par magasin",
+  "translations" : {
+    "EN" : {
+      "name" : "Statistics",
+      "comment" : "Useful aggregates stats"
+    },
+    "FR" : {
+      "name" : "Statistiques",
+      "comment" : "Ce schéma détaille les statistiques quotidiennes par magasin"
+    }
+  },
+  "visible" : true,
+  "graph" : "retail",
+  "scheme" : "STAT",
+  "entry_table" : "STAT",
+  "company" : "retail_demo",
+  "row_count" : 1
+}

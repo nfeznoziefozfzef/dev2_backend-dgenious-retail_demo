@@ -1,0 +1,34 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Discount Excl",
+      "category" : "Tickets"
+    },
+    "FR" : {
+      "name" : "Discount HT",
+      "category" : "Tickets"
+    }
+  },
+  "name" : "Discount HT",
+  "category" : "Tickets",
+  "properties" : {
+    "format" : "0,0.00",
+    "format_unit" : "€",
+    "format_pos" : "prefix",
+    "format_dec_length" : 2,
+    "format_mand_decimals" : true,
+    "format_type" : "unit"
+  },
+  "requires" : "!auth.scheme.BSK_LINE;graph.retail;auth.scheme.BSK | _SYS_",
+  "sql" : "{{BSK}}.`DiscountExcl`",
+  "path" : "retail.BSK.DiscountExcl",
+  "type" : "DECIMAL",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo",
+  "transitions" : [ {
+    "from_grouping" : "SUM",
+    "to_scheme" : "STAT",
+    "to_expression" : "retail.STAT.DiscountExcl"
+  } ]
+}

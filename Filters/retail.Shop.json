@@ -1,0 +1,27 @@
+{
+  "name" : "Magasin",
+  "category" : "Magasin",
+  "mappings" : {
+    "STAT" : "retail.SHO.Name",
+    "BSK_LINE" : "retail.SHO.Name",
+    "BSK" : "retail.SHO.Name",
+    "SHO" : "retail.SHO.Name"
+  },
+  "requires" : [ "graph.retail" ],
+  "translations" : {
+    "EN" : {
+      "name" : "Shop",
+      "category" : "Shops"
+    },
+    "FR" : {
+      "name" : "Magasin",
+      "category" : "Magasins"
+    }
+  },
+  "path" : "retail.Shop",
+  "data_type" : "TEXT",
+  "auto_mappings" : [ "retail.SHO.Name" ],
+  "default_mapping" : "SHO",
+  "company" : "retail_demo",
+  "graph" : "retail"
+}

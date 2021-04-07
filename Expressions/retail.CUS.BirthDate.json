@@ -1,0 +1,21 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Birthdate",
+      "category" : "Customers"
+    },
+    "FR" : {
+      "name" : "Date de naissance",
+      "category" : "Clients"
+    }
+  },
+  "name" : "Date de naissance",
+  "category" : "Clients",
+  "requires" : "graph.retail;auth.scheme.CUS | auth.scheme.BSK_LINE | auth.scheme.BSK | _SYS_",
+  "sql" : "{{CUS}}.`BirthDate`",
+  "path" : "retail.CUS.BirthDate",
+  "type" : "DATE",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

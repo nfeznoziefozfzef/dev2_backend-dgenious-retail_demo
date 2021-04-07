@@ -1,0 +1,25 @@
+{
+  "name" : "Article",
+  "category" : "Articles",
+  "mappings" : {
+    "ART" : "retail.ART.Label",
+    "BSK_LINE" : "retail.ART.Label"
+  },
+  "requires" : [ "graph.retail" ],
+  "translations" : {
+    "EN" : {
+      "name" : "Article",
+      "category" : "Articles"
+    },
+    "FR" : {
+      "name" : "Article",
+      "category" : "Articles"
+    }
+  },
+  "path" : "retail.Article",
+  "data_type" : "TEXT",
+  "auto_mappings" : [ "retail.ART.Label" ],
+  "default_mapping" : "ART",
+  "company" : "retail_demo",
+  "graph" : "retail"
+}

@@ -1,0 +1,21 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Last update",
+      "category" : "Customers"
+    },
+    "FR" : {
+      "name" : "Dernier changement",
+      "category" : "Clients"
+    }
+  },
+  "name" : "Dernier changement",
+  "category" : "Clients",
+  "requires" : "graph.retail;auth.scheme.CUS | auth.scheme.BSK_LINE | auth.scheme.BSK | _SYS_",
+  "sql" : "{{CUS}}.`LastUpdateDate`",
+  "path" : "retail.CUS.LastUpdateDate",
+  "type" : "DATE",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

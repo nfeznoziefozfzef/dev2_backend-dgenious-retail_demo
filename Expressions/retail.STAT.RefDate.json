@@ -1,0 +1,21 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Date",
+      "category" : "Statistics"
+    },
+    "FR" : {
+      "name" : "Date",
+      "category" : "Statistiques"
+    }
+  },
+  "name" : "Date",
+  "category" : "Statistiques",
+  "requires" : "graph.retail;auth.scheme.STAT | _SYS_",
+  "sql" : "{{STAT}}.`RefDate`",
+  "path" : "retail.STAT.RefDate",
+  "type" : "DATE",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

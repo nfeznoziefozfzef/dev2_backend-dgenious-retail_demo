@@ -1,0 +1,21 @@
+{
+  "username" : "dgenious_support",
+  "company" : "retail_demo",
+  "name" : "dgenious support",
+  "language" : "EN",
+  "email" : "support@dgenious.com",
+  "permission_groups" : [ "sys_admin" ],
+  "profile_keys" : {
+    "tcpos.SWA" : {
+      "all_values" : true
+    },
+    "tcpos.SHO" : {
+      "all_values" : true
+    },
+    "retail.Shop" : {
+      "all_values" : true
+    }
+  },
+  "user_id" : -823357686,
+  "editable" : true
+}

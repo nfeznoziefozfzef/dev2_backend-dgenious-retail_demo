@@ -1,0 +1,21 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Churn score",
+      "category" : "Customers"
+    },
+    "FR" : {
+      "name" : "Score churn",
+      "category" : "Clients"
+    }
+  },
+  "name" : "Score churn",
+  "category" : "Clients",
+  "requires" : "graph.retail;auth.scheme.CUS | auth.scheme.BSK_LINE | auth.scheme.BSK | _SYS_",
+  "sql" : "{{CUS}}.`Churn`",
+  "path" : "retail.CUS.Churn",
+  "type" : "TEXT",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

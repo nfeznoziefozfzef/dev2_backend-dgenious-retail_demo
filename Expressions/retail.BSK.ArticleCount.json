@@ -1,0 +1,26 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Articles",
+      "category" : "Tickets"
+    },
+    "FR" : {
+      "name" : "Articles",
+      "category" : "Tickets"
+    }
+  },
+  "name" : "Articles",
+  "category" : "Tickets",
+  "requires" : "!auth.scheme.BSK_LINE;graph.retail;auth.scheme.BSK | _SYS_",
+  "sql" : "{{BSK}}.`ArticleCount`",
+  "path" : "retail.BSK.ArticleCount",
+  "type" : "INTEGER",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo",
+  "transitions" : [ {
+    "from_grouping" : "SUM",
+    "to_scheme" : "STAT",
+    "to_expression" : "retail.STAT.ArticleCount"
+  } ]
+}

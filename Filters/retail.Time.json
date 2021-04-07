@@ -1,0 +1,27 @@
+{
+  "name" : "Heure",
+  "category" : "Date et heure",
+  "comment" : "Heure de la transaction",
+  "mappings" : {
+    "BSK_LINE" : "retail.BSK.RefTime",
+    "BSK" : "retail.BSK.RefTime"
+  },
+  "requires" : [ "graph.retail" ],
+  "translations" : {
+    "EN" : {
+      "name" : "Time",
+      "category" : "Date and time",
+      "comment" : "Transaction time"
+    },
+    "FR" : {
+      "name" : "Heure",
+      "category" : "Date et heure",
+      "comment" : "Heure de la transaction"
+    }
+  },
+  "path" : "retail.Time",
+  "data_type" : "TIME",
+  "auto_mappings" : [ "retail.BSK.RefTime" ],
+  "company" : "retail_demo",
+  "graph" : "retail"
+}

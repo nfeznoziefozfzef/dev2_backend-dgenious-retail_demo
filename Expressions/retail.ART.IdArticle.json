@@ -1,0 +1,24 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "UID Article",
+      "category" : "Articles"
+    },
+    "FR" : {
+      "name" : "UID Article",
+      "category" : "Articles"
+    }
+  },
+  "name" : "UID Article",
+  "category" : "Articles",
+  "requires" : "graph.retail;auth.scheme.ART | auth.scheme.BSK_LINE | _SYS_",
+  "sql" : "{{ART}}.`IdArticle`",
+  "path" : "retail.ART.IdArticle",
+  "type" : "ID",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "scheme_sql" : {
+    "BSK_LINE" : "{{BSK_LINE}}.`IdArticle`"
+  },
+  "company" : "retail_demo"
+}

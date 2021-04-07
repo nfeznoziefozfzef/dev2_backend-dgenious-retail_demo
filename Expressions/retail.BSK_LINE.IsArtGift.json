@@ -1,0 +1,21 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Is gift",
+      "category" : "Tickets - lines"
+    },
+    "FR" : {
+      "name" : "Cadeau",
+      "category" : "Tickets - lignes"
+    }
+  },
+  "name" : "Cadeau",
+  "category" : "Tickets - lignes",
+  "requires" : "graph.retail;auth.scheme.BSK_LINE | _SYS_",
+  "sql" : "{{BSK_LINE}}.`IsArtGift`",
+  "path" : "retail.BSK_LINE.IsArtGift",
+  "type" : "BOOLEAN",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

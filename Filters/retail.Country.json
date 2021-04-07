@@ -1,0 +1,27 @@
+{
+  "name" : "Pays",
+  "category" : "Magasins",
+  "mappings" : {
+    "STAT" : "retail.SHO.IdCountry",
+    "BSK_LINE" : "retail.SHO.IdCountry",
+    "BSK" : "retail.SHO.IdCountry",
+    "SHO" : "retail.SHO.IdCountry"
+  },
+  "requires" : [ "graph.retail" ],
+  "translations" : {
+    "EN" : {
+      "name" : "Country",
+      "category" : "Shops"
+    },
+    "FR" : {
+      "name" : "Pays",
+      "category" : "Magasins"
+    }
+  },
+  "path" : "retail.Country",
+  "data_type" : "TEXT",
+  "auto_mappings" : [ "retail.SHO.IdCountry" ],
+  "default_mapping" : "SHO",
+  "company" : "retail_demo",
+  "graph" : "retail"
+}

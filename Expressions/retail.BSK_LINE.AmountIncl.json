@@ -1,0 +1,38 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Amount Incl",
+      "category" : "Tickets - lines"
+    },
+    "FR" : {
+      "name" : "Montant TTC",
+      "category" : "Tickets - lignes"
+    }
+  },
+  "name" : "Montant TTC",
+  "category" : "Tickets - lignes",
+  "properties" : {
+    "format" : "0,0.00",
+    "format_unit" : "€",
+    "format_pos" : "prefix",
+    "format_dec_length" : 2,
+    "format_mand_decimals" : true,
+    "format_type" : "unit"
+  },
+  "requires" : "graph.retail;auth.scheme.BSK_LINE | _SYS_",
+  "sql" : "{{BSK_LINE}}.`AmountIncl`",
+  "path" : "retail.BSK_LINE.AmountIncl",
+  "type" : "DECIMAL",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo",
+  "transitions" : [ {
+    "from_grouping" : "SUM",
+    "to_scheme" : "BSK",
+    "to_expression" : "retail.BSK.AmountIncl"
+  }, {
+    "from_grouping" : "SUM",
+    "to_scheme" : "STAT",
+    "to_expression" : "retail.STAT.AmountIncl"
+  } ]
+}

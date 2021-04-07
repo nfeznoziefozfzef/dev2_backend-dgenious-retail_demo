@@ -1,0 +1,24 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Registration chain",
+      "category" : "Shop"
+    },
+    "FR" : {
+      "name" : "Enseigne de référence",
+      "category" : "Client"
+    }
+  },
+  "name" : "Enseigne de référence",
+  "category" : "Client",
+  "properties" : {
+    "width" : 250.0
+  },
+  "requires" : "graph.retail;auth.scheme.CUS | auth.scheme.BSK_LINE | auth.scheme.BSK | _SYS_",
+  "sql" : "{{SHO_CUS}}.`ChainStore`",
+  "path" : "retail.SHO_CUS.ChainStore",
+  "type" : "TEXT",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

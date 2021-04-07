@@ -1,0 +1,21 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Chain",
+      "category" : "Shop"
+    },
+    "FR" : {
+      "name" : "Enseigne",
+      "category" : "Magasin"
+    }
+  },
+  "name" : "Enseigne",
+  "category" : "Magasin",
+  "requires" : "graph.retail;auth.scheme.STAT | auth.scheme.BSK_LINE | auth.scheme.BSK | auth.scheme.SHO | _SYS_",
+  "sql" : "{{SHO}}.`ChainStore`",
+  "path" : "retail.SHO.ChainStore",
+  "type" : "TEXT",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

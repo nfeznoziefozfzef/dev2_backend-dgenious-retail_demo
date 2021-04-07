@@ -1,0 +1,22 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Articles",
+      "category" : "Statistics"
+    },
+    "FR" : {
+      "name" : "Articles",
+      "category" : "Statistiques"
+    }
+  },
+  "name" : "Articles",
+  "category" : "Statistiques",
+  "comment" : "Quantité d'articles vendus au cours de la journée, par établissement",
+  "requires" : "graph.retail;auth.scheme.STAT | _SYS_",
+  "sql" : "{{STAT}}.`ArticleCount`",
+  "path" : "retail.STAT.ArticleCount",
+  "type" : "INTEGER",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

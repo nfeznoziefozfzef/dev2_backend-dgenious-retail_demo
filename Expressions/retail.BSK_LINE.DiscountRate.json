@@ -1,0 +1,25 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Percentage discount",
+      "category" : "Tickets - lines"
+    },
+    "FR" : {
+      "name" : "Pourcentage réduction",
+      "category" : "Tickets - lignes"
+    }
+  },
+  "name" : "Pourcentage réduction",
+  "category" : "Tickets - lignes",
+  "properties" : {
+    "format" : "0.00%",
+    "format_type" : "percent"
+  },
+  "requires" : "graph.retail;auth.scheme.BSK_LINE | _SYS_",
+  "sql" : "{{BSK_LINE}}.`DiscountRate`",
+  "path" : "retail.BSK_LINE.DiscountRate",
+  "type" : "DECIMAL",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

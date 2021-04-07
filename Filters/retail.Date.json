@@ -1,0 +1,28 @@
+{
+  "name" : "Date",
+  "category" : "Date et heure",
+  "comment" : "Date de l'opération",
+  "mappings" : {
+    "STAT" : "retail.STAT.RefDate",
+    "BSK_LINE" : "retail.BSK.RefDate",
+    "BSK" : "retail.BSK.RefDate"
+  },
+  "requires" : [ "graph.retail" ],
+  "translations" : {
+    "EN" : {
+      "name" : "Date",
+      "category" : "Date and time",
+      "comment" : "Transaction date"
+    },
+    "FR" : {
+      "name" : "Date",
+      "category" : "Date et heure",
+      "comment" : "Date de l'opération"
+    }
+  },
+  "path" : "retail.Date",
+  "data_type" : "DATE",
+  "auto_mappings" : [ "retail.BSK.RefDate", "retail.STAT.RefDate" ],
+  "company" : "retail_demo",
+  "graph" : "retail"
+}

@@ -1,0 +1,21 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Tickets",
+      "category" : "Statistics"
+    },
+    "FR" : {
+      "name" : "Tickets",
+      "category" : "Statistiques"
+    }
+  },
+  "name" : "Tickets",
+  "category" : "Statistiques",
+  "requires" : "graph.retail;auth.scheme.STAT | _SYS_",
+  "sql" : "{{STAT}}.`BasketCount`",
+  "path" : "retail.STAT.BasketCount",
+  "type" : "DECIMAL",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

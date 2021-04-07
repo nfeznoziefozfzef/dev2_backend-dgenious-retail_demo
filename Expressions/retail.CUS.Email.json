@@ -1,0 +1,24 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Email",
+      "category" : "Customers"
+    },
+    "FR" : {
+      "name" : "Email",
+      "category" : "Clients"
+    }
+  },
+  "name" : "Email",
+  "category" : "Clients",
+  "properties" : {
+    "width" : 300.0
+  },
+  "requires" : "graph.retail;auth.scheme.CUS | auth.scheme.BSK_LINE | auth.scheme.BSK | _SYS_",
+  "sql" : "{{CUS}}.`Email`",
+  "path" : "retail.CUS.Email",
+  "type" : "TEXT",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

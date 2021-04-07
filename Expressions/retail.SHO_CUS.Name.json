@@ -1,0 +1,24 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Registration shop",
+      "category" : "Shop"
+    },
+    "FR" : {
+      "name" : "Magasin de référence",
+      "category" : "Client"
+    }
+  },
+  "name" : "Magasin de référence",
+  "category" : "Client",
+  "properties" : {
+    "width" : 250.0
+  },
+  "requires" : "graph.retail;auth.scheme.CUS | auth.scheme.BSK_LINE | auth.scheme.BSK | _SYS_",
+  "sql" : "{{SHO_CUS}}.`Name`",
+  "path" : "retail.SHO_CUS.Name",
+  "type" : "TEXT",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

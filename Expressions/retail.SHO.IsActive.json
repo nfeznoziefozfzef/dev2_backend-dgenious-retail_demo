@@ -1,0 +1,21 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Active shop",
+      "category" : "Shop"
+    },
+    "FR" : {
+      "name" : "Magasin actif",
+      "category" : "Magasin"
+    }
+  },
+  "name" : "Magasin actif",
+  "category" : "Magasin",
+  "requires" : "graph.retail;auth.scheme.STAT | auth.scheme.BSK_LINE | auth.scheme.BSK | auth.scheme.SHO | _SYS_",
+  "sql" : "{{SHO}}.`IsActive`",
+  "path" : "retail.SHO.IsActive",
+  "type" : "BOOLEAN",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

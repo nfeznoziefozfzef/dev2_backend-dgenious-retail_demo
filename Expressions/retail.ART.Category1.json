@@ -1,0 +1,24 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Category 1",
+      "category" : "Articles"
+    },
+    "FR" : {
+      "name" : "Catégorie 1",
+      "category" : "Articles"
+    }
+  },
+  "name" : "Catégorie 1",
+  "category" : "Articles",
+  "properties" : {
+    "width" : 250.0
+  },
+  "requires" : "graph.retail;auth.scheme.ART | auth.scheme.BSK_LINE | _SYS_",
+  "sql" : "{{ART}}.`Category1`",
+  "path" : "retail.ART.Category1",
+  "type" : "TEXT",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

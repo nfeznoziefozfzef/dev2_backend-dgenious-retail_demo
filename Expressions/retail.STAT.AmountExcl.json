@@ -1,0 +1,29 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Amount Excl",
+      "category" : "Statistics"
+    },
+    "FR" : {
+      "name" : "Montant HT",
+      "category" : "Statistiques"
+    }
+  },
+  "name" : "Montant HT",
+  "category" : "Statistiques",
+  "properties" : {
+    "format" : "0,0.00",
+    "format_unit" : "€",
+    "format_pos" : "prefix",
+    "format_dec_length" : 2,
+    "format_mand_decimals" : true,
+    "format_type" : "unit"
+  },
+  "requires" : "graph.retail;auth.scheme.STAT | _SYS_",
+  "sql" : "{{STAT}}.`AmountExcl`",
+  "path" : "retail.STAT.AmountExcl",
+  "type" : "DECIMAL",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

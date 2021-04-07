@@ -1,0 +1,22 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Registration date",
+      "category" : "Customers"
+    },
+    "FR" : {
+      "name" : "Date d'inscription",
+      "category" : "Clients"
+    }
+  },
+  "name" : "Date d'inscription",
+  "category" : "Clients",
+  "comment" : "Numéro d’ordre du contact par idCust",
+  "requires" : "graph.retail;auth.scheme.CUS | auth.scheme.BSK_LINE | auth.scheme.BSK | _SYS_",
+  "sql" : "{{CUS}}.`RecruitDate`",
+  "path" : "retail.CUS.RecruitDate",
+  "type" : "DATE",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

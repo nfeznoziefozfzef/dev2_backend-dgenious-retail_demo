@@ -1,0 +1,12 @@
+{
+  "name" : "Retail demo",
+  "languages" : [ "EN", "FR" ],
+  "grants" : [ "graph.retail" ],
+  "enabled" : true,
+  "production" : true,
+  "company" : "retail_demo",
+  "admin_profile_restrictions" : {
+    "template_sharer" : false
+  },
+  "graphs" : [ "retail" ]
+}

@@ -1,0 +1,17 @@
+{
+  "username" : "ilebacq",
+  "company" : "retail_demo",
+  "name" : "Isabel Lebacq",
+  "language" : "FR",
+  "email" : "i.lebacq@dgenious.com",
+  "profile_keys" : {
+    "tcpos.SWA" : {
+      "all_values" : true
+    },
+    "tcpos.SHO" : {
+      "all_values" : true
+    }
+  },
+  "user_id" : 1961475872,
+  "editable" : true
+}

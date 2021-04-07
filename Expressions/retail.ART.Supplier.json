@@ -1,0 +1,24 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Supplier",
+      "category" : "Articles"
+    },
+    "FR" : {
+      "name" : "Fournisseur",
+      "category" : "Articles"
+    }
+  },
+  "name" : "Fournisseur",
+  "category" : "Articles",
+  "properties" : {
+    "width" : 250.0
+  },
+  "requires" : "graph.retail;auth.scheme.ART | auth.scheme.BSK_LINE | _SYS_",
+  "sql" : "{{ART}}.`Supplier`",
+  "path" : "retail.ART.Supplier",
+  "type" : "TEXT",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

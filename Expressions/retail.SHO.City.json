@@ -1,0 +1,24 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "City",
+      "category" : "Shop"
+    },
+    "FR" : {
+      "name" : "Ville",
+      "category" : "Magasin"
+    }
+  },
+  "name" : "Ville",
+  "category" : "Magasin",
+  "properties" : {
+    "width" : 200.0
+  },
+  "requires" : "graph.retail;auth.scheme.STAT | auth.scheme.BSK_LINE | auth.scheme.BSK | auth.scheme.SHO | _SYS_",
+  "sql" : "{{SHO}}.`City`",
+  "path" : "retail.SHO.City",
+  "type" : "TEXT",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

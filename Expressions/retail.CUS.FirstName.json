@@ -1,0 +1,24 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "First name",
+      "category" : "Customers"
+    },
+    "FR" : {
+      "name" : "Prénom",
+      "category" : "Clients"
+    }
+  },
+  "name" : "Prénom",
+  "category" : "Clients",
+  "properties" : {
+    "width" : 200.0
+  },
+  "requires" : "graph.retail;auth.scheme.CUS | auth.scheme.BSK_LINE | auth.scheme.BSK | _SYS_",
+  "sql" : "{{CUS}}.`FirstName`",
+  "path" : "retail.CUS.FirstName",
+  "type" : "TEXT",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}

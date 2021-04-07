@@ -1,0 +1,24 @@
+{
+  "translations" : {
+    "EN" : {
+      "name" : "Segment 1",
+      "category" : "Customers"
+    },
+    "FR" : {
+      "name" : "Segment 1",
+      "category" : "Clients"
+    }
+  },
+  "name" : "Segment 1",
+  "category" : "Clients",
+  "properties" : {
+    "width" : 200.0
+  },
+  "requires" : "graph.retail;auth.scheme.CUS | auth.scheme.BSK_LINE | auth.scheme.BSK | _SYS_",
+  "sql" : "{{CUS}}.`Segment1`",
+  "path" : "retail.CUS.Segment1",
+  "type" : "TEXT",
+  "graph" : "retail",
+  "refers_to_table" : true,
+  "company" : "retail_demo"
+}
